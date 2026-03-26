@@ -7,24 +7,28 @@ A B2B Healthcare SaaS dashboard built with React, TypeScript, and Tailwind CSS. 
 ## Features
 
 ### Authentication
+
 - Firebase Email/Password authentication
 - Session persistence across page refreshes
 - Protected routes with automatic redirects
 - Form validation with inline error states
 
 ### Dashboard
+
 - Summary stat cards (patients, appointments, alerts, wait time)
 - Patient admissions trend chart (Recharts)
 - Recent patients list with status badges
 - Activity table with sortable columns
 
 ### Analytics
+
 - Admissions over time (area chart)
 - Department-wise patient distribution (horizontal bar chart)
 - Patient status breakdown (donut chart)
 - Filterable by department and time range
 
 ### Patient Management
+
 - **Grid view** — card-based layout with patient info
 - **List view** — table layout with full details
 - Toggle switch to switch between views
@@ -33,6 +37,7 @@ A B2B Healthcare SaaS dashboard built with React, TypeScript, and Tailwind CSS. 
 - Click-to-open patient detail modal
 
 ### Notifications
+
 - Service Worker registration
 - Browser Notification API integration
 - In-app notification panel (bell icon with unread count)
@@ -41,17 +46,17 @@ A B2B Healthcare SaaS dashboard built with React, TypeScript, and Tailwind CSS. 
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | React 18 + TypeScript |
-| Build Tool | Vite 6 |
-| Routing | React Router v6 |
-| State Management | Zustand 5 |
-| Styling | Tailwind CSS 3.4 |
-| Charts | Recharts |
-| Icons | Lucide React |
-| Auth | Firebase Authentication |
-| Notifications | Service Worker + Notification API |
+| Layer            | Technology                        |
+| ---------------- | --------------------------------- |
+| Framework        | React 18 + TypeScript             |
+| Build Tool       | Vite 6                            |
+| Routing          | React Router v6                   |
+| State Management | Zustand 5                         |
+| Styling          | Tailwind CSS 3.4                  |
+| Charts           | Recharts                          |
+| Icons            | Lucide React                      |
+| Auth             | Firebase Authentication           |
+| Notifications    | Service Worker + Notification API |
 
 ## Architecture
 
@@ -89,6 +94,7 @@ Three stores handle the entire app state:
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js 18+
 - A Firebase project with Email/Password auth enabled
 
@@ -109,15 +115,6 @@ cp .env.example .env
 # Run
 npm run dev
 ```
-
-### Firebase Setup
-
-1. Go to [console.firebase.google.com](https://console.firebase.google.com)
-2. Create a new project
-3. Add a web app and copy the config
-4. Enable **Email/Password** auth in Authentication → Sign-in method
-5. Create a test user in Authentication → Users
-6. Paste config values into `.env`
 
 ### Deployment (Vercel)
 
