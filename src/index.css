@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+}
+
+@layer components {
+  .stat-card {
+    @apply bg-white border border-gray-100 rounded-xl p-5 transition-all duration-200 hover:shadow-sm hover:border-gray-200;
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-gray-500 transition-all duration-150 hover:bg-gray-100 hover:text-gray-700;
+  }
+
+  .sidebar-link.active {
+    @apply bg-brand-50 text-brand-400 font-medium hover:bg-brand-50;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-admitted {
+    @apply bg-emerald-50 text-emerald-700;
+  }
+
+  .badge-critical {
+    @apply bg-red-50 text-red-700;
+  }
+
+  .badge-discharged {
+    @apply bg-gray-100 text-gray-600;
+  }
+
+  .badge-outpatient {
+    @apply bg-amber-50 text-amber-700;
+  }
+
+  .view-toggle-btn {
+    @apply flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium transition-all duration-150 cursor-pointer;
+  }
+
+  .view-toggle-btn.active {
+    @apply bg-brand-400 text-white;
+  }
+
+  .view-toggle-btn:not(.active) {
+    @apply text-gray-500 hover:text-gray-700 hover:bg-gray-50;
+  }
+
+  .table-header {
+    @apply text-[11px] font-medium text-gray-400 uppercase tracking-wider;
+  }
+
+  .chart-card {
+    @apply bg-white border border-gray-100 rounded-xl p-5;
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2.5 text-sm border border-gray-200 rounded-lg bg-white transition-all duration-150 outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-50 placeholder:text-gray-400;
+  }
+
+  .btn-primary {
+    @apply w-full py-2.5 bg-brand-400 text-white text-sm font-medium rounded-lg transition-all duration-150 hover:bg-brand-500 active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
